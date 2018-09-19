@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
      * Product,FactoryProduct对象是自己写的类，在构造方法上加入@Inject实现注入
      * OkHttpClient 为第三方类，利用AppModule通过@Provides实现注入
      * 这二种注入方式可以配合使用,参考MyOkHttpClient
+     * Module用于提供对象，Component用于注入对象
      * Module并不是必需的，但Component是必不可少的；
      * 1、定义的Component和Module的名字是无所谓的，但是一般遵照以Component或Module结尾的名称；
      * 2、Module中用@Provides标注的方法的方法名是无所谓的，返回值是最重要的，但是一般遵照以provide开头的方法名；
